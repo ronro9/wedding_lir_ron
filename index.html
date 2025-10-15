@@ -4,98 +4,118 @@
 <meta charset="utf-8">
 <title>החתונה של ליר ורון</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    direction: rtl;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-    min-height: 100vh;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    filter: brightness(1.1) contrast(1.1) saturate(1.2);
-  }
+  body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(1.1) contrast(1.1) saturate(1.2);
+  }
 
-  /* טקסט ראשי */
-  h1 {
-    color: white;
-    font-weight: 900;                 /* בולד חזק */
-    -webkit-text-stroke: 1.5px black; /* stroke קטן יחסית */
-    text-stroke: 1.5px black;
-    font-size: clamp(40px, 12vw, 96px); /* גודל משתנה למסכים */
-    line-height: 1.2;
-    margin-bottom: 30px;
-  }
+  /* טקסט ראשי */
+  h1 {
+    color: white;
+    font-weight: 900;                 /* בולד חזק */
+    -webkit-text-stroke: 1.5px black; /* stroke קטן יחסית */
+    text-stroke: 1.5px black;
+    font-size: clamp(40px, 12vw, 96px); /* גודל משתנה למסכים */
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
 
-  /* טקסט משני */
-  p {
-    color: white;
-    font-weight: 700;                  /* בולד לפסקאות */
-    -webkit-text-stroke: 1px black;    /* stroke קטן */
-    text-stroke: 1px black;
-    font-size: clamp(20px, 6vw, 36px); /* גדול וברור */
-    line-height: 1.6;
-    margin: 15px 0;
-  }
+  /* טקסט משני */
+  p {
+    color: white;
+    font-weight: 700;                  /* בולד לפסקאות */
+    -webkit-text-stroke: 1px black;    /* stroke קטן */
+    text-stroke: 1px black;
+    font-size: clamp(20px, 6vw, 36px); /* גדול וברור */
+    line-height: 1.6;
+    margin: 15px 0;
+  }
 
-  /* כפתורים */
-  a.button {
-    display: inline-block;
-    padding: 18px 32px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 700;                  /* בולד בכפתורים */
-    margin: 15px;
-    font-size: clamp(18px, 5vw, 28px); /* כפתורים גדולים ונוחים */
-  }
+  /* כפתורים */
+  a.button {
+    display: inline-block;
+    padding: 18px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;                  /* בולד בכפתורים */
+    margin: 15px;
+    font-size: clamp(18px, 5vw, 28px); /* כפתורים גדולים ונוחים */
+    transition: background-color 0.3s ease; /* אנימציה למעבר צבע */
+  }
+  
+  /* צבעים קיימים */
+  a.google {
+    background-color: #2b7cff;
+    color: white;
+    border: 1px solid #2b7cff;
+  }
 
-  a.google {
-    background-color: #2b7cff;
-    color: white;
-    border: 1px solid #2b7cff;
-  }
+  a.ics {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
 
-  a.ics {
-    background-color: #4CAF50;
-    color: white;
-    border: 1px solid #4CAF50;
-  }
+  a.waze {
+    background-color: #ff6600;
+    color: white;
+    border: 1px solid #ff6600;
+  }
 
-  a.waze {
-    background-color: #ff6600;
-    color: white;
-    border: 1px solid #ff6600;
-  }
+  /* *** CSS חדש ל-Bit *** */
+  a.bit {
+    background-color: #12C143; /* ירוק ביט */
+    color: white;
+    border: 1px solid #12C143;
+  }
+  a.bit:hover {
+    background-color: #0d9635; /* ירוק כהה יותר */
+  }
 </style>
 </head>
 <body>
-  <h1>החתונה של ליר ורון 💍</h1>
-  <p>14.01.2026 — 19:30 עד 02:00<br>
-     האחוזה מודיעין, שדרות התעשיות 14, מודיעין מכבים רעות, ישראל</p>
-  <p>נשמח לראות אתכם באירוע שלנו 💌</p>
+  <h1>החתונה של ליר ורון 💍</h1>
+  <p>14.01.2026 — 19:30 עד 02:00<br>
+     האחוזה מודיעין, שדרות התעשיות 14, מודיעין מכבים רעות, ישראל</p>
+  <p>נשמח לראות אתכם באירוע שלנו 💌</p>
 
-  <!-- כפתור ל-Google Calendar -->
-  <p>
-    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=החתונה+של+ליר+ורון&dates=20260114T193000/20260115T020000&details=נשמח+לראות+אתכם+באירוע+שלנו+💌&location=האחוזה+מודיעין,+שדרות+התעשיות+14,+מודיעין+מכבים+רעות,+ישראל" 
-       target="_blank" class="button google">
-       הוסף ל-Google Calendar
-    </a>
-  </p>
+  
+    <p>
+    <a href="https://payment.bitpay.co.il/p/972506566450" 
+       target="_blank" class="button bit">
+       שלח/י מתנה דרך Bit 🟢
+    </a>
+  </p>
+  <p style="font-size: 18px; font-weight: 500; margin-top: -10px;">
+    (יש להזין את סכום המתנה ידנית באפליקציה)
+  </p>
 
-  <!-- כפתור להורדת ICS -->
-  <p>
-    <a href="https://drive.google.com/uc?export=download&id=1elJZGWnI9CYL-94kpQIRJDmYQNcz0DHq" 
-       class="button ics">
-       הורד קובץ .ICS (iPhone/Android/Outlook)
-    </a>
-  </p>
+    <p>
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=החתונה+של+ליר+ורון&dates=20260114T193000/20260115T020000&details=נשמח+לראות+אתכם+באירוע+שלנו+💌&location=האחוזה+מודיעין,+שדרות+התעשיות+14,+מודיעין+מכבים+רעות,+ישראל" 
+       target="_blank" class="button google">
+       הוסף ל-Google Calendar
+    </a>
+  </p>
 
-  <!-- כפתור ל-Waze -->
-  <p>
-    <a href="https://ul.waze.com/ul?venue_id=22937919.229117044.14451&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" 
-       target="_blank" class="button waze">
-       הגעה ל-Waze
-    </a>
-  </p>
+    <p>
+    <a href="https://drive.google.com/uc?export=download&id=1elJZGWnI9CYL-94kpQIRJDmYQNcz0DHq" 
+       class="button ics">
+       הורד קובץ .ICS (iPhone/Android/Outlook)
+    </a>
+  </p>
+
+    <p>
+    <a href="https://ul.waze.com/ul?venue_id=22937919.229117044.14451&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" 
+       target="_blank" class="button waze">
+       הגעה ל-Waze
+    </a>
+  </p>
 </body>
 </html>
